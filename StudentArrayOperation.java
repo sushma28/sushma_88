@@ -25,13 +25,8 @@ public interface StudentArrayOperation {
 	 */
 	void setStudents(Student[] students);
 	
-
-	/**
-	 * if index lower than 0 or index higher/equal students.length method should
-	 * throw IllegalArgumentException
-	 *
-	 * @param index
-	 */
+student id=getID();
+	
 	Student getStudent(int index);
 
 	
@@ -51,7 +46,10 @@ public interface StudentArrayOperation {
 	 */
 	void setStudent(Student student, int index);
 
-	
+         if(student id==index)
+	 {
+		 index=student id;
+		 
 	/**
 	 * Appends the specified element to the specified position of this array if
 	 * student == null method should throw IllegalArgumentException if index
@@ -180,18 +178,19 @@ public interface StudentArrayOperation {
 	void bubbleSort();
 
 	
-	/**
-	 * Returns all students with birthday to the specified date if date == null,
-	 * method should throw IllegalArgumentException
-	 * 
-	 * @param date
-	 *            the date that specify birthday to find students who was born
-	 *            before that date and in that date
-	 * 
-	 * @return the array of students who was born before/in specified date
-	 * 
-	 * @throws IllegalArgumentException
-	 */
+for(int i=0;i<n;i++)
+{
+	for(int j=0;j<=i;j++)
+	{
+		if(student[i]>student[j])
+		{
+			temp=student[i];
+			student[i]=student[j];
+			student[j]=temp;
+		}
+	}
+}
+
 	Student[] getByBirthDate(Date date);
 
 	
